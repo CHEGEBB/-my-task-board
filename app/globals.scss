@@ -1,70 +1,66 @@
-@import 'tailwindcss/base';
-@import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap");
 
-$color1:#F8FAFC;
-$color2:#F5D565;
-$color3:#F5E8D5;
-$color4:#E9A23B;
-$color5:#A0ECB1;
-$color6:#32D657;
-$color7:#F7D4D3;
-$color8:#DD524C;
-$color9:#E3E8EF;
-$color10:#97A3B6;
-$color11:#3662E3;
-$color12:#00000033;
-@media screen and (min-width:1280px) {
-    body {
-       background-color: $color1;
-       main{
-      
-    
-       .main-content{
+$color1: #f8fafc;
+$color2: #f5d565;
+$color3: #f5e8d5;
+$color4: #e9a23b;
+$color5: #a0ecb1;
+$color6: #32d657;
+$color7: #f7d4d3;
+$color8: #dd524c;
+$color9: #e3e8ef;
+$color10: #97a3b6;
+$color11: #3662e3;
+$color12: #00000033;
+@media screen and (min-width: 1280px) {
+  body {
+    background-color: $color1;
+    main {
+      .main-content {
         width: 50%;
         height: 70vh;
         background-color: $color1;
         text-align: center;
-        .header{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            gap: 20px;
-            .logo{
-                margin-top: -40px;
+        .header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+          .logo {
+            margin-top: -40px;
+          }
+          .content-app {
+            h1 {
+              font-family: "Sora", sans-serif;
+              font-size: 40px;
+              font-weight: regular;
             }
-            .content-app{
-                h1{
-                    font-family: 'Sora', sans-serif;
-                    font-size: 40px;
-                    font-weight: regular;
-                }
-                h2{
-                    font-family: 'Sora', sans-serif;
-                    font-size: 20px;
-                    font-weight: 400;
-                    text-align: left;
-                }
+            h2 {
+              font-family: "Sora", sans-serif;
+              font-size: 20px;
+              font-weight: 400;
+              text-align: left;
             }
-            .edit{
-                margin-top: -40px;
-                img{
-                    width: 30px;
-                    height: 30px;
-                }
+          }
+          .edit {
+            margin-top: -40px;
+            img {
+              width: 30px;
+              height: 30px;
             }
+          }
         }
-        .actions{
-            display: flex;
-            flex-direction: column;
-            gap: 30px;
-            margin-top: 40px;
+        .actions {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          margin-top: 40px;
         }
-      
-       }
+      }
     }
-}
-    
+  }
 }
