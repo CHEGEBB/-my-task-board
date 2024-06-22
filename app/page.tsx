@@ -4,13 +4,25 @@ import Completed from "./components/Completed";
 import Wont from "./components/Wont";
 import Do from "./components/Do";
 import AddTask from "./components/AddTask";
+import Logo from "./images/logo.svg";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between min-h-screen p-24">
-      <div className="flex flex-col p-4 text-left bg-gray-200 main-content ">
-      <h1>My Task Board</h1>
+      <div className=" main-content">
+        <div className="header">
+          <div className="logo">
+            <Image
+              src={Logo}
+              alt="logo"
+              width={100}
+              height={100}
+            />
+          </div>
+        <h1>My Task Board</h1>
       <h2><small>Tasks to keep organised</small></h2>
+        </div>
+     
       <div className="actions">
 
       <div className="progress">
