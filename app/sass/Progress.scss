@@ -7,16 +7,30 @@ $color4:#E9A23B;
     height: 70px !important;
     display: flex;
     flex-direction: row;
-    gap: 20px;
     background-color: $color2;
     border-radius: 15px;
+    justify-content: space-between;
     padding: 20px;
+    .prog{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
     .progress-icon-container{
         background-color: $color1;
         width: 40px;
         height: 40px;
         border-radius: 12px;
         padding: 7px;
+    }
+    .progress{
+        background-color: $color4;
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        padding: 7px;
+        display: flex;
+        justify-content: flex-end;
     }
 
    
