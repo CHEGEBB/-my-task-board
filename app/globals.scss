@@ -4,9 +4,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@200;400;500&display=swap');
 
+$color1:#F8FAFC;
+$color2:#F5D565;
+$color3:#F5E8D5;
+$color4:#E9A23B;
+$color5:#A0ECB1;
+$color6:#32D657;
+$color7:#F7D4D3;
+
 @media screen and (min-width:1280px) {
     body {
-        font-size: 1.125rem;
+       background-color: $color1;
     }
     
 }
