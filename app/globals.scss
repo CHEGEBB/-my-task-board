@@ -23,7 +23,7 @@ $color12:#00000033;
       
     
        .main-content{
-        width: 60%;
+        width: 50%;
         height: 70vh;
         background-color: $color1;
         text-align: center;
@@ -49,6 +49,7 @@ $color12:#00000033;
                 }
             }
             .edit{
+                margin-top: -40px;
                 img{
                     width: 30px;
                     height: 30px;
