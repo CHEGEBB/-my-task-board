@@ -5,6 +5,7 @@ import Wont from "./components/Wont";
 import Do from "./components/Do";
 import AddTask from "./components/AddTask";
 import Logo from "./images/logo.svg";
+import Edit from "./images/Edit_duotone.svg";
 
 export default function Home() {
   return (
@@ -15,12 +16,24 @@ export default function Home() {
             <Image
               src={Logo}
               alt="logo"
-              width={100}
-              height={100}
+              width={50}
+              height={50}
             />
           </div>
-        <h1>My Task Board</h1>
-      <h2><small>Tasks to keep organised</small></h2>
+          <div className="content-app">
+          <h1>My Task Board</h1>
+          <h2><small>Tasks to keep organised</small></h2>
+          </div>
+          <div className="edit">
+            <Image
+              src={Edit}
+              alt="edit"
+              width={50}
+              height={50}
+            />
+          </div>
+       
+      
         </div>
      
       <div className="actions">

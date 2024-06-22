@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Sora } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.scss";
 
-const sora = Sora({ subsets: ["latin"] });
+const outfit = Outfit({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "My Task Board",
@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={sora.className}>{children}</body>
+      <body className={outfit.className}>{children}</body>
     </html>
   );
 }
