@@ -1,5 +1,6 @@
 $color9:#E3E8EF;
 $outfit: "Outfit", sans-serif;
+$color10:#97A3B6;
 
 .do-main{
     width: 100%;
@@ -7,7 +8,7 @@ $outfit: "Outfit", sans-serif;
     display: flex;justify-content: space-between;
     align-items: center;
     background-color: $color9;
-    border-radius: 8px;
+    border-radius: 15px;
     .done{
         display: flex;
     flex-direction: row;
@@ -18,6 +19,15 @@ $outfit: "Outfit", sans-serif;
         font-weight: 600;
         margin-top: 7px;
     }
+    }
+    .do-icon-container{
+        width: 45px;
+        height: 45px;
+    }
+    .do{
+        background-color: $color10;
+        width: 45px;
+        height: 45px;
     }
 
    
