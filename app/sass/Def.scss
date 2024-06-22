@@ -1,13 +1,25 @@
 $color7:#F7D4D3;
-
+$outfit: "Outfit", sans-serif;
+$color8:#DD524C;
 .wont-main{
     width: 100%;
     height: 70px !important;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: $color7;
-    border-radius: 8px;
+    border-radius: 15px;
+    .wont-cont{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        .wont-progress{
+            font-family: $outfit;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 7px;
+        }
+    }
 
    
 }
