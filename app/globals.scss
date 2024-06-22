@@ -19,11 +19,23 @@ $color12:#00000033;
 @media screen and (min-width:1280px) {
     body {
        background-color: $color1;
+       main{
+      
+    
        .main-content{
         border: 2px solid #ccc;
-        width: 100%;
+        width: 60%;
         height: 70vh;
+        background-color: $color1;
+        text-align: center;
+        .actions{
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+      
        }
     }
+}
     
 }

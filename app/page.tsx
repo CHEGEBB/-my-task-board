@@ -10,6 +10,7 @@ export default function Home() {
       <div className="flex flex-col p-4 text-left bg-gray-200 main-content ">
       <h1>My Task Board</h1>
       <h2><small>Tasks to keep organised</small></h2>
+      <div className="actions">
 
       <div className="progress">
         <Progress />
@@ -23,6 +24,7 @@ export default function Home() {
       </div>
       <div className="do">
         <Do />
+      </div>
       </div>
       </div>
 
