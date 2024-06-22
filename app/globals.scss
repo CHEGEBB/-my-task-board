@@ -19,6 +19,11 @@ $color12:#00000033;
 @media screen and (min-width:1280px) {
     body {
        background-color: $color1;
+       .main-content{
+        background-color: $color2;
+        width: 100%;
+        height: 70vh;
+       }
     }
     
 }

@@ -2,7 +2,12 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex flex-col items-center justify-between min-h-screen p-24">
+      <div className="main-content ">
+      <h1>My Task Board</h1>
+      <h2><small>Tasks to keep organised</small></h2>
+      </div>
+
     </main>
   );
 }
