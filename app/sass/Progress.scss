@@ -12,7 +12,7 @@ $outfit: 'Outfit', sans-serif;
     background-color: $color2;
     border-radius: 15px;
     justify-content: space-between;
-    padding: 15px;
+    padding: 12px;
     .prog{
         display: flex;
         flex-direction: row;
@@ -31,6 +31,7 @@ $outfit: 'Outfit', sans-serif;
         height: 45px;
         border-radius: 12px;
         padding: 8px;
+        margin-left: 5px;
     }
     .progress{
         background-color: $color4;
