@@ -1,13 +1,29 @@
 $color5:#A0ECB1;
+$outfit: 'Outfit', sans-serif;
 
 .completed-main{
     width: 100%;
     height: 70px !important;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     background-color: $color5;
-    border-radius: 8px;
+    border-radius: 15px;
+    .comp{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        .completed-progress{
+            font-family:$outfit ;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 7px;
+        }
+    }
+    .completed-icon-container{
+        width: 45px;
+        height: 45px;
+    }
 
    
 }
