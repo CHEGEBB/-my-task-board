@@ -1,47 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-$color2:#F5D565;
-$color1:#F8FAFC;
-$color4:#E9A23B;
-$outfit: 'Outfit', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+$color2: #f5d565;
+$color1: #f8fafc;
+$color4: #e9a23b;
+$outfit: "Outfit", sans-serif;
 
-.progress-main{
-    width: 100%;
-    height: 70px !important;
+.progress-main {
+  width: 100%;
+  height: 70px !important;
+  display: flex;
+  flex-direction: row;
+  background-color: $color2;
+  border-radius: 15px;
+  justify-content: space-between;
+  padding: 12px;
+
+  .prog {
     display: flex;
     flex-direction: row;
-    background-color: $color2;
-    border-radius: 15px;
-    justify-content: space-between;
-    padding: 12px;
-    .prog{
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-        .content-progress{
-            font-family:$outfit ;
-            font-size: 20px;
-            font-weight: 600;
-            margin-top: 7px;
+    gap: 20px;
 
-        }
+    .content-progress {
+      font-family: $outfit;
+      font-size: 20px;
+      font-weight: 600;
+      margin-top: 7px;
     }
-    .progress-icon-container{
-        background-color: $color1;
-        width: 45px;
-        height: 45px;
-        border-radius: 12px;
-        padding: 8px;
-        margin-left: 2px;
-    }
-    .progress{
-        background-color: $color4;
-        width: 45px;
-        height: 45px;
-        border-radius: 12px;
-        padding: 7px;
-        display: flex;
-        justify-content: flex-end;
-    }
+  }
 
-   
+  .progress-icon-container {
+    background-color: $color1;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    padding: 8px;
+    margin-left: 2px;
+  }
+
+  .progress {
+    background-color: $color4;
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    padding: 7px;
+    display: flex;
+    justify-content: flex-end;
+  }
 }

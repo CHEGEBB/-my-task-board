@@ -1,13 +1,24 @@
 $color9:#E3E8EF;
+$outfit: "Outfit", sans-serif;
 
 .do-main{
     width: 100%;
     height: 70px !important;
-    display: flex;
-    justify-content: center;
+    display: flex;justify-content: space-between;
     align-items: center;
     background-color: $color9;
     border-radius: 8px;
+    .done{
+        display: flex;
+    flex-direction: row;
+    gap: 20px;
+    .do-progress{
+        font-family: $outfit;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 7px;
+    }
+    }
 
    
 }
