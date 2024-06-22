@@ -3,6 +3,7 @@ import Progress from "./components/Progress";
 import Completed from "./components/Completed";
 import Wont from "./components/Wont";
 import Do from "./components/Do";
+import AddTask from "./components/AddTask";
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
       </div>
       <div className="do">
         <Do />
+      </div>
+      <div className="add">
+        <AddTask />
       </div>
       </div>
       </div>
