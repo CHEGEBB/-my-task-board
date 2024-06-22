@@ -1,5 +1,6 @@
 $color5:#A0ECB1;
 $outfit: 'Outfit', sans-serif;
+$color6:#32D657;
 
 .completed-main{
     width: 100%;
@@ -21,6 +22,11 @@ $outfit: 'Outfit', sans-serif;
         }
     }
     .completed-icon-container{
+        width: 45px;
+        height: 45px;
+    }
+    .completed{
+        background-color: $color6;
         width: 45px;
         height: 45px;
     }
