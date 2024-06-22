@@ -8,7 +8,7 @@ $color10: #97a3b6;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $color9;
+  background-color: $color10;
   border-radius: 15px;
   .done {
     display: flex;
@@ -26,7 +26,7 @@ $color10: #97a3b6;
     height: 45px;
   }
   .do {
-    background-color: $color10;
+    background-color: $color9;
     width: 45px;
     height: 45px;
   }

@@ -18,12 +18,11 @@ $color11: #3662e3;
 $color12: #00000033;
 @media screen and (min-width: 1280px) {
   body {
-    background-color: $color1;
+    background-color: $color9;
     main {
       .main-content {
         width: 50%;
         height: 70vh;
-        background-color: $color1;
         text-align: center;
         .header {
           display: flex;
