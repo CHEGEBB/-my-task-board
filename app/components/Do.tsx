@@ -1,4 +1,5 @@
 import React from 'react'
+import '../sass/Do.scss'
 
 export default function Do() {
   return (

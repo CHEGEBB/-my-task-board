@@ -1,4 +1,5 @@
 import React from 'react'
+import '../sass/Completed.scss'
 
 export default function Completed() {
   return (
