@@ -1,4 +1,5 @@
 import React from 'react'
+import '../sass/Progress.scss'
 
 export default function Progress() {
   return (
