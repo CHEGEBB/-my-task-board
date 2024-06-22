@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 $color2:#F5D565;
 $color1:#F8FAFC;
 $color4:#E9A23B;
+$outfit: 'Outfit', sans-serif;
 
 .progress-main{
     width: 100%;
@@ -15,18 +17,25 @@ $color4:#E9A23B;
         display: flex;
         flex-direction: row;
         gap: 20px;
+        .content-progress{
+            font-family:$outfit ;
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 7px;
+
+        }
     }
     .progress-icon-container{
         background-color: $color1;
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         border-radius: 12px;
-        padding: 7px;
+        padding: 8px;
     }
     .progress{
         background-color: $color4;
-        width: 40px;
-        height: 40px;
+        width: 45px;
+        height: 45px;
         border-radius: 12px;
         padding: 7px;
         display: flex;
