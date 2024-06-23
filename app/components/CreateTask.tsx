@@ -10,7 +10,7 @@ export default function CreateTask() {
         <label htmlFor="task">Task name</label>
         <input type="text" name="task" id="task" />
         </div>
-        <div className="form-group">
+        <div className=" form-group">
         <label htmlFor="description">Description</label>
         <textarea name="description" id="description" cols={30} rows={10}></textarea>
         </div>
