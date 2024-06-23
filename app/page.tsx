@@ -6,10 +6,12 @@ import Do from "./components/Do";
 import AddTask from "./components/AddTask";
 import Logo from "./images/logo.svg";
 import Edit from "./images/Edit_duotone.svg";
+import CreateTask from "./components/CreateTask";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-between min-h-screen p-24">
+      <div className="container">
       <div className=" main-content">
         <div className="header">
           <div className="logo">
@@ -54,6 +56,10 @@ export default function Home() {
       <div className="add">
         <AddTask />
       </div>
+      </div>
+      </div>
+      <div className="create-task">
+        <CreateTask />
       </div>
       </div>
 

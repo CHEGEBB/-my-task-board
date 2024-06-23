@@ -5,6 +5,7 @@ export default function CreateTask() {
     <div className="create-task-main">
       <form className="form">
         <h2>Task details</h2>
+        <label htmlFor="task">Task name</label>
       </form>
         
     </div>
