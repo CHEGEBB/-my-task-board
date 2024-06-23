@@ -12,7 +12,7 @@ export default function CreateTask() {
         </div>
         <div className=" form-group">
         <label htmlFor="description">Description</label>
-        <textarea name="description" id="description" cols={30} rows={10}></textarea>
+        <textarea name="description" id="description" cols={30} rows={20}></textarea>
         </div>
       </form>
         

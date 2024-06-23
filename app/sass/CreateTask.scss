@@ -18,7 +18,8 @@ $color12: #00000033;
     width: 600px;
     background-color: $color1;
     left: 90%;
-
+    padding: 10px;
+    border-radius: 12px;
     form{
         .form-group{
             display: flex;
@@ -34,16 +35,20 @@ $color12: #00000033;
                 padding: 10px;
                 &:focus{
                     outline: none;
+                    border: 2px solid $color11;
                 }
             }
             textarea{
                 width: 100%;
-                height: 100px;
+                height: 180px;
                 border-radius: 10px;
                 border: 2px solid $color9;
                 padding: 10px;
+                outline: none !important;
+               
                 &:focus{
                     outline: none;
+                    border: 2px solid $color11;
                 }
             }
         }
