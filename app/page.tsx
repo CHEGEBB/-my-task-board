@@ -7,8 +7,10 @@ import AddTask from "./components/AddTask";
 import Logo from "./images/logo.svg";
 import Edit from "./images/Edit_duotone.svg";
 import CreateTask from "./components/CreateTask";
+import {useState} from 'react'
 
 export default function Home() {
+  const [isVisible ,SetIsVisible]=useState(false)
   return (
     <main className="flex flex-col items-center justify-between min-h-screen p-24">
       <div className="container">
