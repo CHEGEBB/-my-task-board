@@ -2,7 +2,7 @@ import React from 'react'
 import "../sass/CreateTask.scss"
 import Progressicon from "../images/Time_atack_duotone.svg"
 import Completedicon from "../images/Done_round_duotone.svg"
-import Wonticon from "../images/close_ring_duotone-1.svg"
+import Wonticon from "../images/close_ring_duotone.svg"
 import Image from 'next/image'
 export default function CreateTask() {
   return (
@@ -59,7 +59,7 @@ export default function CreateTask() {
                 <h1>Completed</h1>
               </div>
             </div>
-            <div className="flex flex-row  wont">
+            <div className="flex flex-row wont">
               <div className="flex flex-row wont-icon">
                 <Image src={Wonticon} alt="Wont Icon" width={30} quality={100} />
               </div>

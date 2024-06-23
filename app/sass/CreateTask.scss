@@ -11,21 +11,37 @@ $color10: #97a3b6;
 $color11: #3662e3;
 $color12: #00000033;
 $outfit: "Outfit", sans-serif;
-@mixin status{
-    width: 250px;
-    height: 52px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: row;
-    border: 2px solid $color9;
+@mixin status {
+  width: 250px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  border: 2px solid $color9;
+  padding: 1px;
+  gap: 20px;
+  &:hover {
+    border: 2px solid $color11;
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+    border: 2px solid $color11;
+  }
 }
-@mixin iconstyles{
-    width: 45px;
-    height: 45px;
-    border-radius: 12px;
-    padding: 3px;
-    display: flex;
-    justify-content: flex-end;
+@mixin iconstyles {
+  width: 45px;
+  height: 45px;
+  border-radius: 12px;
+  padding: 7px;
+  display: flex;
+  justify-content: flex-end;
+}
+@mixin text {
+  font-family: $outfit;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 7px;
 }
 .create-task-main {
   position: relative !important;
@@ -86,65 +102,73 @@ $outfit: "Outfit", sans-serif;
         }
       }
     }
-    .icon-container{
-        display: flex;
-        flex-direction: column;
-        h2{
-            font-family: $outfit;
+    .icon-container {
+      display: flex;
+      flex-direction: column;
+      h2 {
+        font-family: $outfit;
         font-size: 12px;
         font-weight: 400;
         color: $color10;
         margin-top: 7px;
         margin-left: 25px;
+      }
+      .icon {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5px;
+        .con {
+          width: 45px;
+          height: 45px;
         }
-    .icon {
-      display: flex;
-      flex-direction: row;
-      margin-top: 5px;
-      .con {
-        width: 45px;
-        height: 45px;
       }
     }
-}
-.status-container{
-    display: flex;
-    flex-direction: column;
-    h2{
+    .status-container {
+      display: flex;
+      flex-direction: column;
+      h2 {
         font-family: $outfit;
-    font-size: 12px;
-    font-weight: 400;
-    color: $color10;
-    margin-top: 7px;
-    margin-left: 25px;
-    }
-    .status{
+        font-size: 12px;
+        font-weight: 400;
+        color: $color10;
+        margin-top: 7px;
+        margin-left: 25px;
+      }
+      .status {
         display: flex;
         flex-wrap: wrap;
         gap: 20px;
-        .progress{
-            @include status;
-            .progress-icon{
-                @include iconstyles;
-                background-color: red;
-            }
+        .progress {
+          @include status;
+          .progress-icon {
+            @include iconstyles;
+            background-color: $color4;
+          }
+          .progress-text {
+            @include text;
+          }
         }
-        .completed{
-            @include status;
-            .completed-icon{
-                @include iconstyles;
-                background-color: green;
-            }
+        .completed {
+          @include status;
+          .completed-icon {
+            @include iconstyles;
+            background-color: $color6;
+          }
+          .completed-text {
+            @include text;
+          }
         }
-        .wont{
-            @include status;
-            .wont-icon{
-                @include iconstyles;
-                background-color: blue;
-            }
+        .wont {
+          @include status;
+          .wont-icon {
+            @include iconstyles;
+            background-color: $color8;
+          }
+          .wont-text {
+            @include text;
+          }
         }
-
+      }
     }
-}
   }
 }
