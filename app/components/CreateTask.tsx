@@ -15,6 +15,7 @@ export default function CreateTask() {
         <textarea name="description" id="description" cols={30} rows={20}></textarea>
         </div>
         <div className="icon">
+          <h2>Icon</h2>
           <div className="p-3 ml-3 bg-gray-200 con rounded-xl">
             <h1>👨‍💻</h1>
           </div>
