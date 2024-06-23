@@ -14,8 +14,9 @@ export default function CreateTask() {
         <label htmlFor="description">Description</label>
         <textarea name="description" id="description" cols={30} rows={20}></textarea>
         </div>
+        <div className="icon-container">
+        <h2>Icon</h2>
         <div className="icon">
-          <h2>Icon</h2>
           <div className="p-3 ml-3 bg-gray-200 con rounded-xl">
             <h1>👨‍💻</h1>
           </div>
@@ -34,6 +35,15 @@ export default function CreateTask() {
             <div className="p-3 ml-3 bg-gray-200 con rounded-xl">
             <h1>⏰</h1>
             </div>
+        </div>
+        </div>
+        <div className="status-container">
+          <h2>Status</h2>
+          <div className="status">
+            <div className="progress"></div>
+            <div className="completed"></div>
+            <div className="wont"></div>
+          </div>
         </div>
       </form>
         

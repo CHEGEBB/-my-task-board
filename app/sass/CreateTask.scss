@@ -70,13 +70,26 @@ $outfit: "Outfit", sans-serif;
         }
       }
     }
+    .icon-container{
+        display: flex;
+        flex-direction: column;
+        h2{
+            font-family: $outfit;
+        font-size: 12px;
+        font-weight: 400;
+        color: $color10;
+        margin-top: 7px;
+        margin-left: 25px;
+        }
     .icon {
       display: flex;
       flex-direction: row;
+      margin-top: 5px;
       .con {
         width: 45px;
         height: 45px;
       }
     }
+}
   }
 }
