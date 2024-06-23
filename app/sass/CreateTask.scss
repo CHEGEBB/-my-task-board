@@ -18,6 +18,14 @@ $outfit: "Outfit", sans-serif;
     display: flex;
     flex-direction: row;
 }
+@mixin iconstyles{
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    padding: 7px;
+    display: flex;
+    justify-content: flex-end;
+}
 .create-task-main {
   position: relative !important;
   z-index: 3;
@@ -115,15 +123,24 @@ $outfit: "Outfit", sans-serif;
         gap: 20px;
         .progress{
             @include status;
-            background-color: red;
+            .progress-icon{
+                @include iconstyles;
+                background-color: red;
+            }
         }
         .completed{
             @include status;
-            background-color: green;
+            .completed-icon{
+                @include iconstyles;
+                background-color: green;
+            }
         }
         .wont{
             @include status;
-            background-color: blue;
+            .wont-icon{
+                @include iconstyles;
+                background-color: blue;
+            }
         }
 
     }
