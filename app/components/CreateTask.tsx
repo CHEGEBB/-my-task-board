@@ -4,6 +4,8 @@ import Progressicon from "../images/Time_atack_duotone.svg"
 import Completedicon from "../images/Done_round_duotone.svg"
 import Wonticon from "../images/close_ring_duotone.svg"
 import Image from 'next/image'
+import Deletecon from '../images/Trash.svg'
+import Savecon from '../images/Done_round.svg'
 export default function CreateTask() {
   return (
     <div className="create-task-main">
@@ -67,6 +69,17 @@ export default function CreateTask() {
                 <h1>Wont do</h1>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="button-container">
+          <div className="delete-button">
+            <button type="button">Delete</button>
+            <Image src={Deletecon} alt="Delete Icon" width={30} quality={100} />
+
+          </div>
+          <div className="save-button">
+            <button type="button">Save</button>
+            <Image src={Savecon} alt="Save Icon" width={30} quality={100} />
           </div>
         </div>
       </form>
