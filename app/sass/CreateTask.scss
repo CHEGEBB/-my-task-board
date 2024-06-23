@@ -175,35 +175,61 @@ $outfit: "Outfit", sans-serif;
         flex-direction: row;
         justify-content: flex-end;
         gap: 20px;
-        margin-top: 20px;
+        margin-top: 40px;
         .delete-button{
-            button {
-                width: 100px;
-                height: 50px;
-                border-radius: 10px;
-                padding: 10px;
-                background-color: $color10;
-                &:focus {
-                  outline: none;
-                  border: 2px solid $color11;
-                }
-        }
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            color: $color1;
+            width: 120px;
+            height: 40px;
+            border-radius: 26px;
+            justify-content: center;
+            align-items: center;
+            background-color: $color10;
+            &:focus {
+                outline: none;
+                cursor: pointer;
+              }
+              &:hover {
+                cursor: pointer;
+              }
+            .deletecon{
+               img{
+                width: 20px;
+                height: 20px;
+               }
+            }
         
         }
         .save-button{
-            button {
-                width: 100px;
-                height: 50px;
-                border-radius: 10px;
-                padding: 10px;
-                background-color: $color11;
-                &:focus {
-                  outline: none;
-                  border: 2px solid $color11;
-                }
+            display: flex;
+            flex-direction: row;
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            color: $color1;
+            width: 120px;
+            height: 40px;
+            border-radius: 26px;
+            justify-content: center;
+            align-items: center;
+            background-color: $color11;
+            &:focus {
+                outline: none;
+                cursor: pointer;
+              }
+              &:hover {
+                cursor: pointer;
+              }
+              .savecon{
+                img{
+                    width: 20px;
+                    height: 20px;
+                   }
+              }
         }
   
     }
   }
-}
 }

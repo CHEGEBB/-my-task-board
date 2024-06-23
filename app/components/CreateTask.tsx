@@ -73,13 +73,18 @@ export default function CreateTask() {
         </div>
         <div className="button-container">
           <div className="delete-button">
+            <div className="del">
             <button type="button">Delete</button>
+            </div>
+            <div className="deletecon">
             <Image src={Deletecon} alt="Delete Icon" width={30} quality={100} />
-
+            </div>
           </div>
           <div className="save-button">
             <button type="button">Save</button>
+            <div className="savecon">
             <Image src={Savecon} alt="Save Icon" width={30} quality={100} />
+            </div>
           </div>
         </div>
       </form>
