@@ -13,16 +13,17 @@ $color12: #00000033;
 $outfit: "Outfit", sans-serif;
 @mixin status{
     width: 250px;
-    height: 45px;
+    height: 52px;
     border-radius: 12px;
     display: flex;
     flex-direction: row;
+    border: 2px solid $color9;
 }
 @mixin iconstyles{
     width: 45px;
     height: 45px;
     border-radius: 12px;
-    padding: 7px;
+    padding: 3px;
     display: flex;
     justify-content: flex-end;
 }
