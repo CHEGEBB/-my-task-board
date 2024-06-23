@@ -28,21 +28,22 @@ $outfit: "Outfit", sans-serif;
             font-weight: 600;
             margin-top: 7px;
             text-align: left;
-            margin-left: 12px;
+            margin-left: 15px;
         }
         .form-group{
             display: flex;
             flex-direction: column;
-            gap: 20px;
+            gap: 10px;
             padding: 20px;
             width: 580px;
             label{
                 font-family: $outfit;
                 font-size: 12px;
-                font-weight: 600;
-                margin-top: 7px;
+                font-weight: 400;
+                color: $color10;
+                margin-top: -7px;
                 text-align: left;
-                margin-left: 12px;
+                margin-left: 0px;
             }
             input{
                 width: 100%;
