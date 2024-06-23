@@ -43,6 +43,24 @@ $outfit: "Outfit", sans-serif;
   font-weight: 400;
   margin-top: 7px;
 }
+@mixin button{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    width: 120px;
+    height: 40px;
+    border-radius: 26px;
+    justify-content: center;
+    align-items: center;
+    color: $color1;
+    &:focus {
+      outline: none;
+      cursor: pointer;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+}
 .create-task-main {
   position: relative !important;
   z-index: 3;
@@ -170,66 +188,32 @@ $outfit: "Outfit", sans-serif;
         }
       }
     }
-    .button-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        gap: 20px;
-        margin-top: 40px;
-        .delete-button{
-            display: flex;
-            flex-direction: row;
-            gap: 5px;
-            color: $color1;
-            width: 120px;
-            height: 40px;
-            border-radius: 26px;
-            justify-content: center;
-            align-items: center;
-            background-color: $color10;
-            &:focus {
-                outline: none;
-                cursor: pointer;
-              }
-              &:hover {
-                cursor: pointer;
-              }
-            .deletecon{
-               img{
-                width: 20px;
-                height: 20px;
-               }
-            }
-        
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      gap: 20px;
+      margin-top: 40px;
+      .delete-button {
+        @include button;
+        background-color: $color10;
+        .deletecon {
+          img {
+            width: 20px;
+            height: 20px;
+          }
         }
-        .save-button{
-            display: flex;
-            flex-direction: row;
-            display: flex;
-            flex-direction: row;
-            gap: 5px;
-            color: $color1;
-            width: 120px;
-            height: 40px;
-            border-radius: 26px;
-            justify-content: center;
-            align-items: center;
-            background-color: $color11;
-            &:focus {
-                outline: none;
-                cursor: pointer;
-              }
-              &:hover {
-                cursor: pointer;
-              }
-              .savecon{
-                img{
-                    width: 20px;
-                    height: 20px;
-                   }
-              }
+      }
+      .save-button {
+        @include button;
+        background-color: $color11;
+        .savecon {
+          img {
+            width: 20px;
+            height: 20px;
+          }
         }
-  
+      }
     }
   }
 }
