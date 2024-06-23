@@ -43,7 +43,7 @@ export default function CreateTask() {
         <div className="status-container">
           <h2>Status</h2>
           <div className="status">
-            <div className="progress">
+          <div className="flex flex-row progress">
               <div className="progress-icon">
                 <Image src={Progressicon} alt="Progress Icon" width={30} quality={100} />
               </div>
@@ -51,7 +51,7 @@ export default function CreateTask() {
                 <h1>In Progress</h1>
               </div>
             </div>
-            <div className="completed">
+            <div className="flex flex-row completed">
               <div className="completed-icon">
                 <Image src={Completedicon} alt="Completed Icon" width={30} quality={100} />
               </div>
@@ -59,8 +59,8 @@ export default function CreateTask() {
                 <h1>Completed</h1>
               </div>
             </div>
-            <div className="wont">
-              <div className="wont-icon">
+            <div className="flex flex-row  wont">
+              <div className="flex flex-row wont-icon">
                 <Image src={Wonticon} alt="Wont Icon" width={30} quality={100} />
               </div>
               <div className="wont-text">

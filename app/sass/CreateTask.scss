@@ -11,11 +11,18 @@ $color10: #97a3b6;
 $color11: #3662e3;
 $color12: #00000033;
 $outfit: "Outfit", sans-serif;
+@mixin status{
+    width: 250px;
+    height: 45px;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: row;
+}
 .create-task-main {
   position: relative !important;
   z-index: 3;
   display: flex;
-  height: 80vh;
+  height: 85vh;
   width: 600px;
   background-color: $color1;
   left: 90%;
@@ -89,6 +96,36 @@ $outfit: "Outfit", sans-serif;
         width: 45px;
         height: 45px;
       }
+    }
+}
+.status-container{
+    display: flex;
+    flex-direction: column;
+    h2{
+        font-family: $outfit;
+    font-size: 12px;
+    font-weight: 400;
+    color: $color10;
+    margin-top: 7px;
+    margin-left: 25px;
+    }
+    .status{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        .progress{
+            @include status;
+            background-color: red;
+        }
+        .completed{
+            @include status;
+            background-color: green;
+        }
+        .wont{
+            @include status;
+            background-color: blue;
+        }
+
     }
 }
   }
