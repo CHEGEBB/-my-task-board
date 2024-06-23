@@ -5,7 +5,7 @@ import Image from "next/image";
 import "../sass/Add.scss";
 
 type AddTaskProps = {
-  onClick: () => void; // Define onClick prop as a function that takes no arguments and returns void
+  onClick: () => void; 
 };
 
 const AddTask: React.FC<AddTaskProps> = ({ onClick }) => {

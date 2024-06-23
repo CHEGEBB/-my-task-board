@@ -1,0 +1,21 @@
+$color1: #f8fafc;
+$color2: #f5d565;
+$color3: #f5e8d5;
+$color4: #e9a23b;
+$color5: #a0ecb1;
+$color6: #32d657;
+$color7: #f7d4d3;
+$color8: #dd524c;
+$color9: #e3e8ef;
+$color10: #97a3b6;
+$color11: #3662e3;
+$color12: #00000033;
+.create-task-main{
+    position: relative !important;;
+    z-index: 3;
+    display: flex;
+    height: 70vh;
+    width: 350px;
+    left: 47%;
+    background-color: $color1;
+}
