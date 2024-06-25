@@ -43,23 +43,23 @@ $outfit: "Outfit", sans-serif;
   font-weight: 400;
   margin-top: 7px;
 }
-@mixin button{
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    width: 120px;
-    height: 40px;
-    border-radius: 26px;
-    justify-content: center;
-    align-items: center;
-    color: $color1;
-    &:focus {
-      outline: none;
-      cursor: pointer;
-    }
-    &:hover {
-      cursor: pointer;
-    }
+@mixin button {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 120px;
+  height: 40px;
+  border-radius: 26px;
+  justify-content: center;
+  align-items: center;
+  color: $color1;
+  &:focus {
+    outline: none;
+    cursor: pointer;
+  }
+  &:hover {
+    cursor: pointer;
+  }
 }
 .create-task-main {
   position: relative !important;

@@ -17,15 +17,11 @@ $color12: #00000033;
   body {
     background-color: $color9;
     main {
-      .container{
-        display:flex ;
+      .container {
+        display: flex;
         flex-direction: row;
-        .create-task{
-          
-
-        }
       }
-      
+
       .main-content {
         position: absolute;
         z-index: 1;
