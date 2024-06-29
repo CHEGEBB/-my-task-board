@@ -1,26 +1,25 @@
-// controllers/TaskController.js
-const Task = require('../models/Taskmodel');
+// TaskController.js
 
-// Fetch all tasks
-exports.getAllTasks = async (req, res) => {
+const Task = require('../models/Taskmodel'); // Assuming your Mongoose Task model
+
+// Function to handle POST request to create a new task
+const createTask = async (req, res) => {
+    const { taskname, description, status } = req.body;
+
     try {
-        const tasks = await Task.find();
-        res.json(tasks);
-    } catch (error) {
-        console.error('Error fetching tasks:', error);
-        res.status(500).json({ error: 'Failed to fetch tasks' });
+        const newTask = new Task({
+            taskname,
+            description,
+            status
+        });
+
+        const savedTask = await newTask.save();
+        res.status(201).json(savedTask); // Respond with the saved task as JSON
+    } catch (err) {
+        res.status(500).json({ error: err.message }); // Handle error if save fails
     }
 };
 
-// Fetch tasks by status
-exports.getTasksByStatus = async (req, res) => {
-    const { status } = req.params;
-
-    try {
-        const tasks = await Task.find({ status });
-        res.json(tasks);
-    } catch (error) {
-        console.error(`Error fetching ${status} tasks:`, error);
-        res.status(500).json({ error: `Failed to fetch ${status} tasks` });
-    }
+module.exports = {
+    createTask
 };
