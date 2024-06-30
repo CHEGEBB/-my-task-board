@@ -1,6 +1,16 @@
 // TaskController.js
 
-const Task = require('../models/Taskmodel'); // Assuming your Mongoose Task model
+const Task = require('../models/Taskmodel'); 
+
+//Function to handle get tasks to update new tasks in frontend
+const getTasks = async (req, res) => {
+    try {
+        const tasks = await Task.find(); // Retrieve all tasks from the database
+        res.status(200).json(tasks); // Respond with the tasks as JSON
+    } catch (err) {
+        res.status(500).json({ error: err.message }); // Handle error if retrieval fails
+    }
+};
 
 // Function to handle POST request to create a new task
 const createTask = async (req, res) => {

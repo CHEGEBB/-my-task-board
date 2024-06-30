@@ -9,6 +9,7 @@ import Logo from "./images/logo.svg";
 import Edit from "./images/Edit_duotone.svg";
 import CreateTask from "./components/CreateTask";
 import { useState } from 'react';
+import NewComponent from "./components/NewComponent";
 
 export default function Home() {
   const [isVisible, SetIsVisible] = useState(false);
@@ -60,6 +61,10 @@ export default function Home() {
             <div className="add">
               <AddTask onClick={handleClick} />
             </div>
+            <div className="new">
+              <NewComponent />
+            </div>
+
           </div>
         </div>
         {isVisible &&
