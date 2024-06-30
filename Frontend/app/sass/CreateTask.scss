@@ -217,3 +217,51 @@ $outfit: "Outfit", sans-serif;
     }
   }
 }
+// tablet device
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .create-task-main {
+    width: 450px;
+    left: 70%;
+    form {
+      .form-group {
+        width: 480px;
+        input {
+          width: 400px;
+        }
+        textarea {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+// mobile device
+
+@media only screen and (max-width: 768px) {
+  .create-task-main {
+    width: 300px;
+    left: 10%;
+    height: 120vh;
+    form {
+      .form-group {
+        width: 300px;
+        input {
+          width: 200px;
+        }
+        textarea {
+          width: 200px;
+        }
+        .icon{
+          display: flex;
+          flex-direction: column;
+          .con {
+            width: 25px;
+            height: 25px;
+          }
+        }
+      }
+    }
+  }
+}
