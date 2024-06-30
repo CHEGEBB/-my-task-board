@@ -1,5 +1,3 @@
-// TaskController.js
-
 const Task = require('../models/Taskmodel'); 
 
 //Function to handle get tasks to update new tasks in frontend
