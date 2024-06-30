@@ -70,3 +70,120 @@ $color12: #00000033;
     }
   }
 }
+// tablet design
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: $color1;
+    main {
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .main-content {
+        position: absolute;
+        z-index: 1;
+        width: 50%;
+        height: 70vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20%;
+        .header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+          .logo {
+            margin-top: -40px;
+          }
+          .content-app {
+            h1 {
+              font-family: "Sora", sans-serif;
+              font-size: 40px;
+              font-weight: regular;
+            }
+            h2 {
+              font-family: "Sora", sans-serif;
+              font-size: 20px;
+              font-weight: 400;
+              text-align: left;
+            }
+          }
+          .edit {
+            margin-top: -40px;
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+        .actions {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
+
+// mobile devices
+@media screen and (max-width: 768px) {
+  body {
+    background-color: $color1;
+    main {
+      .container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .main-content {
+        position: absolute;
+        z-index: 1;
+        width: 50%;
+        height: 70vh;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin-left: 20%;
+        .header {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 20px;
+          .logo {
+            margin-top: -40px;
+          }
+          .content-app {
+            h1 {
+              font-family: "Sora", sans-serif;
+              font-size: 40px;
+              font-weight: regular;
+            }
+            h2 {
+              font-family: "Sora", sans-serif;
+              font-size: 20px;
+              font-weight: 400;
+              text-align: left;
+            }
+          }
+          .edit {
+            margin-top: -40px;
+            img {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+        .actions {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          margin-top: 40px;
+        }
+      }
+    }
+  }
+}
