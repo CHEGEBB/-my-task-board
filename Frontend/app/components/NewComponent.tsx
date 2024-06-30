@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import '../sass/New.scss';
 
 export default function Home() {
     const [latestTask, setLatestTask] = useState<any>(null);
@@ -7,7 +8,7 @@ export default function Home() {
     useEffect(() => {
         const fetchLatestTask = async () => {
             try {
-                const response = await axios.get('/api/tasks'); // Assuming your API is mounted at '/api/tasks'
+                const response = await axios.get('http://localhost:5000/api/tasks'); 
                 setLatestTask(response.data);
             } catch (error) {
                 console.error('Error fetching latest task:', error);
@@ -18,7 +19,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div>
+        <div className='New'>
             {latestTask && (
                 <div>
                     <h2>Latest Task:</h2>
