@@ -138,6 +138,10 @@ $outfit: "Outfit", sans-serif;
         .con {
           width: 45px;
           height: 45px;
+          &:hover {
+            cursor: pointer;
+            border: 2px solid $color11;
+          }
         }
       }
     }
