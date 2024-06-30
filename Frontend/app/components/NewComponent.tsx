@@ -20,13 +20,13 @@ export default function Home() {
 
     return (
         <div className='New'>
+            <div className="p-3 ml-3 bg-gray-200 con rounded-xl">
+              <h1>📚</h1>
+            </div>
             {latestTask && (
                 <div>
-                    <h2>Latest Task:</h2>
-                    <p>Task Name: {latestTask.taskname}</p>
-                    <p>Description: {latestTask.description}</p>
-                    <p>Status: {latestTask.status}</p>
-                    {/* Render other details as needed */}
+                    <h2>Task To Do</h2>
+                    <p>{latestTask.description}</p>
                 </div>
             )}
         </div>

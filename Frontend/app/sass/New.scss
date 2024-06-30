@@ -1,9 +1,40 @@
-.New{
+$color1: #f8fafc;
+$color2: #f5d565;
+$color3: #f5e8d5;
+$color4: #e9a23b;
+$color5: #a0ecb1;
+$color6: #32d657;
+$color7: #f7d4d3;
+$color8: #dd524c;
+$color9: #e3e8ef;
+$color10: #97a3b6;
+$color11: #3662e3;
+$color12: #00000033;
+$outfit: "Outfit", sans-serif;
+.New {
     width: 100%;
-  height: 80px !important;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: red;
-  border-radius: 15px;
-}
+    min-height: fit-content;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    background-color: $color9;
+    border-radius: 15px;
+    padding: 10px; 
+    margin-bottom: 10px; 
+    h2{
+        font-family: $outfit;
+        font-size: 20px;
+        font-weight: 600;
+        margin-top: 7px;
+        text-align: left;
+    }
+    p{
+        font-family: $outfit;
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 7px;
+        text-align: left;
+    }
+  }
+  

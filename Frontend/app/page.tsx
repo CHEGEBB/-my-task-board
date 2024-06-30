@@ -55,14 +55,11 @@ export default function Home() {
             <div className="deferred">
               <Wont />
             </div>
-            <div className="do">
-              <Do />
+            <div className="new">
+              <NewComponent />
             </div>
             <div className="add">
               <AddTask onClick={handleClick} />
-            </div>
-            <div className="new">
-              <NewComponent />
             </div>
 
           </div>
