@@ -1,49 +1,33 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
 
-interface Task {
-  _id: string;
-  taskname: string;
-  description: string;
-  status: string;
-  icon: string;
+export default function Home() {
+    const [latestTask, setLatestTask] = useState<any>(null);
+
+    useEffect(() => {
+        const fetchLatestTask = async () => {
+            try {
+                const response = await axios.get('/api/tasks'); // Assuming your API is mounted at '/api/tasks'
+                setLatestTask(response.data);
+            } catch (error) {
+                console.error('Error fetching latest task:', error);
+            }
+        };
+
+        fetchLatestTask();
+    }, []);
+
+    return (
+        <div>
+            {latestTask && (
+                <div>
+                    <h2>Latest Task:</h2>
+                    <p>Task Name: {latestTask.taskname}</p>
+                    <p>Description: {latestTask.description}</p>
+                    <p>Status: {latestTask.status}</p>
+                    {/* Render other details as needed */}
+                </div>
+            )}
+        </div>
+    );
 }
-
-const NewComponent: React.FC = () => {
-  const [tasks, setTasks] = useState<Task[]>([]);
-
-  useEffect(() => {
-    fetchTasks();
-  }, []);
-
-  const fetchTasks = async () => {
-    try {
-      const response = await fetch('http://localhost:5000/api/tasks');
-      if (response.ok) {
-        const data = await response.json();
-        setTasks(data);
-      } else {
-        console.error('Failed to fetch tasks');
-      }
-    } catch (error) {
-      console.error('Error fetching tasks:', error);
-    }
-  };
-
-  return (
-    <div className="new-component">
-      <h2>Recently Added Tasks</h2>
-      <ul>
-        {tasks.map((task) => (
-          <li key={task._id}>
-            <h3>{task.taskname}</h3>
-            <p>{task.description}</p>
-            <p>Status: {task.status}</p>
-            <p>Icon: {task.icon}</p>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
-
-export default NewComponent;
