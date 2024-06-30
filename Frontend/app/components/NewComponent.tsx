@@ -8,7 +8,7 @@ export default function Home() {
     useEffect(() => {
         const fetchLatestTask = async () => {
             try {
-                const response = await axios.get('http://localhost:5000/api/tasks'); 
+                const response = await axios.get('https://my-task-board-gb76.onrender.com/api/tasks'); 
                 setLatestTask(response.data);
             } catch (error) {
                 console.error('Error fetching latest task:', error);
