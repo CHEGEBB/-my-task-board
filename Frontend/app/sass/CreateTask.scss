@@ -257,14 +257,13 @@ $outfit: "Outfit", sans-serif;
         textarea {
           width: 200px;
         }
-      
       }
     }
   }
-  .icon-container{
+  .icon-container {
     width: 300px;
   }
-  .icon{
+  .icon {
     display: flex;
     flex-direction: column;
     .con {
@@ -272,8 +271,8 @@ $outfit: "Outfit", sans-serif;
       height: 25px;
     }
   }
-  .button-container{
-    button{
+  .button-container {
+    button {
       width: 50px;
       height: 50px;
     }

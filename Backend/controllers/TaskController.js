@@ -9,8 +9,6 @@ const getTasks = async (req, res) => {
         res.status(500).json({ error: err.message }); // Handle error if retrieval fails
     }
 };
-
-// Function to handle POST request to create a new task
 const createTask = async (req, res) => {
     const { taskname, description, status } = req.body;
 

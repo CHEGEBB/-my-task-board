@@ -70,7 +70,6 @@ $color12: #00000033;
     }
   }
 }
-// tablet design
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   body {
     background-color: $color1;
@@ -128,8 +127,6 @@ $color12: #00000033;
     }
   }
 }
-
-// mobile devices
 @media screen and (max-width: 768px) {
   body {
     background-color: $color1;
