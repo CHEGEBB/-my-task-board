@@ -253,15 +253,25 @@ $outfit: "Outfit", sans-serif;
         textarea {
           width: 200px;
         }
-        .icon{
-          display: flex;
-          flex-direction: column;
-          .con {
-            width: 25px;
-            height: 25px;
-          }
-        }
+      
       }
+    }
+  }
+  .icon-container{
+    width: 300px;
+  }
+  .icon{
+    display: flex;
+    flex-direction: column;
+    .con {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  .button-container{
+    button{
+      width: 50px;
+      height: 50px;
     }
   }
 }
